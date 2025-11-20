@@ -83,6 +83,7 @@
 ---
 
 ### Установка на Keenetic/Netcraze и другие системы с Entware
+~~~opkg remove wget-nossl~~~
 
 1. Установите необходимые зависимости
    ```

@@ -18,11 +18,9 @@
 > Подразумевается, что вы понимаете, что вы делаете.
 
 Изначально написано для роутеров Keenetic/Netcraze с установленным entware.
-Однако, работоспособность также была проверена на прошивках Padavan и OpenWRT (читайте ниже).
 
-Списки проверенного оборудования собираем в [отдельной теме](https://github.com/Anonym-tsk/nfqws-keenetic/discussions/1).
 <details>
-  <summary>Собранный список моделей из темы</summary>
+  <summary>Поддерживаемые модели</summary>
  
   - Cudy TR1200
   - Cudy TR3000
@@ -199,74 +197,7 @@ _Не забудьте поставить галочку на интерфейс
 ---
 
    
- <details>
-    
- <summary> #### Установка на OpenWRT </summary>
 
-#### До версии 24.10 включительно, пакетный менеджер `opkg`
-
-1. Установите необходимые зависимости
-   ```
-   opkg update
-   opkg install ca-certificates wget-ssl
-   opkg remove wget-nossl
-   ```
-
-2. Установите публичный ключ репозитория
-   ```
-   wget -O "/tmp/nfqws-keenetic.pub" "https://anonym-tsk.github.io/nfqws-keenetic/openwrt/nfqws-keenetic.pub"
-   opkg-key add /tmp/nfqws-keenetic.pub
-   ```
-
-3. Установите репозиторий в систему
-   ```
-   echo "src/gz nfqws-keenetic https://anonym-tsk.github.io/nfqws-keenetic/openwrt" > /etc/opkg/nfqws-keenetic.conf
-   ```
-   Репозиторий универсальный, поддерживаемые архитектуры: `mipsel`, `mips`, `mips64`, `aarch64`, `armv7`, `x86`, `x86_64`, `lexra`.
-   Для добавления поддержки новых устройств, [создайте Feature Request](https://github.com/Anonym-tsk/nfqws-keenetic/issues/new?template=feature_request.md&title=%5BFeature+request%5D+)
-
-4. Установите пакет
-   ```
-   opkg update
-   opkg install nfqws-keenetic
-   ```
-
-5. Установите веб-интерфейс (опционально)
-   ```
-   opkg install nfqws-keenetic-web
-   ```
-
-#### Версии 25.xx и Snapshot, пакетный менеджер `apk`
-
-1. Установите необходимые зависимости
-   ```
-   apk --update-cache add ca-certificates wget-ssl
-   apk del wget-nossl
-   ```
-
-2. Установите публичный ключ репозитория
-   ```
-   wget -O "/etc/apk/keys/nfqws-keenetic.pem" "https://anonym-tsk.github.io/nfqws-keenetic/openwrt/nfqws-keenetic.pem"
-   ```
-
-3. Установите репозиторий в систему
-   ```
-   echo "https://anonym-tsk.github.io/nfqws-keenetic/openwrt/packages.adb" > /etc/apk/repositories.d/nfqws-keenetic.list
-   ```
-   Репозиторий универсальный, поддерживаемые архитектуры: `mipsel`, `mips`, `mips64`, `aarch64`, `armv7`, `x86`, `x86_64`, `lexra`.
-   Для добавления поддержки новых устройств, [создайте Feature Request](https://github.com/Anonym-tsk/nfqws-keenetic/issues/new?template=feature_request.md&title=%5BFeature+request%5D+)
-
-4. Установите пакет
-   ```
-   apk --update-cache add nfqws-keenetic
-   ```
-
-5. Установите веб-интерфейс (опционально)
-   ```
-   apk add nfqws-keenetic-web
-   ```
-
-</details>
 > [!NOTE]
 > NB: Все пути файлов, описанные в этой инструкции, начинающиеся с `/opt`, на OpenWRT будут начинаться с корня `/`.
 > Например конфиг расположен в `/etc/nfqws/nfqws.conf`

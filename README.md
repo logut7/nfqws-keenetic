@@ -88,8 +88,7 @@
    opkg update
    opkg install ca-certificates wget-ssl
    ```
-   ~~opkg remove wget-nossl~~
-
+ 
 2. Установите opkg-репозиторий в систему
  
    Выбрать нужный репозиторий под конкретную архитектуру

@@ -4,8 +4,6 @@
 [![GitHub Stars](https://img.shields.io/github/stars/Anonym-tsk/nfqws-keenetic?style=flat)](https://github.com/Anonym-tsk/nfqws-keenetic/stargazers)
 [![License](https://img.shields.io/github/license/Anonym-tsk/nfqws-keenetic.svg?style=flat&color=orange)](LICENSE)
 [![CloudTips](https://img.shields.io/badge/donate-CloudTips-598bd7.svg?style=flat)](https://pay.cloudtips.ru/p/054d0666)
-[![YooMoney](https://img.shields.io/badge/donate-YooMoney-8037fd.svg?style=flat)](https://yoomoney.ru/to/410019180291197)
-[![Join Telegram group](https://img.shields.io/badge/Telegram_group-Join-blue.svg?style=social&logo=telegram)](https://t.me/nfqws)
 
 Пакеты для установки `nfqws` на маршрутизаторы.
 
@@ -27,21 +25,8 @@
 <details>
   <summary>Собранный список моделей из темы</summary>
  
-  - Билайн Smart Box GIGA
-  - Билайн Smart Box Turbo
-  - ASUS ROG Rapture GT-AX6000
-  - ASUS RT-AC51U
-  - ASUS RT-AC68U
-  - ASUS RT-AC86U
-  - ASUS RT-AX58U
-  - ASUS RT-AX86U
-  - ASUS RT-AX88U
-  - ASUS RT-N16
-  - ASUS RT-N56U
   - Cudy TR1200
   - Cudy TR3000
-  - D-Link DIR-620/D/F1A
-  - GL.iNet Flint 2 (GL-MT6000)
   - Zyxel Keenetic II
   - Zyxel Keenetic III
   - Zyxel Keenetic Giga II
@@ -64,9 +49,6 @@
   - Keenetic Viva (KN-1912)
   - Keenetic Viva (KN-1913)
   - Keenetic DSL (KN-2010)
-  - Keenetic Launcher DSL (KN-2012)
-  - Keenetic Duo (KN-2110)
-  - Keenetic Skipper DSL (KN-2112)
   - Keenetic Runner 4G (KN-2211)
   - Keenetic Hero 4G+ (KN-2311)
   - Keenetic Giga SE (KN-2410)
@@ -93,8 +75,6 @@
   - Xiaomi Router Redmi AC2100
 
 </details>
-
-Поделиться опытом можно в разделе [Discussions](https://github.com/Anonym-tsk/nfqws-keenetic/discussions) или в [чате](https://t.me/nfqws).
 
 ### Что это?
 
@@ -128,7 +108,7 @@
    ```
    opkg update
    opkg install ca-certificates wget-ssl
-   opkg remove wget-nossl
+   Не нужно opkg remove wget-nossl
    ```
 
 2. Установите opkg-репозиторий в систему

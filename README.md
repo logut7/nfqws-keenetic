@@ -40,7 +40,6 @@
   - Keenetic Hopper DSL (KN-3610)
   - Keenetic Hopper (KN-3810)
   - Keenetic Hopper (KN-3811)
-  - Keenetic Hopper SE (KN-3812)
   - TP-Link Archer C20
   - TP-Link Archer C6U
   - TP-Link WDR3500
@@ -101,6 +100,7 @@
    <details>
      <summary>Или можете выбрать репозиторий под конкретную архитектуру</summary>
 
+
      - `aarch64-3.10` <sub><sup>Keenetic Peak (KN-2710), Ultra (KN-1811), Hopper (KN-3811), Hopper SE (KN-3812), Giga (KN-1012)</sup></sub>
        ```
        mkdir -p /opt/etc/opkg
@@ -119,16 +119,25 @@
        echo "src/gz nfqws-keenetic https://anonym-tsk.github.io/nfqws-keenetic/mips" > /opt/etc/opkg/nfqws-keenetic.conf
        ```
 
+     - `mips-3.4` <sub><sup> Репозиторий универсальный, поддерживаемые архитектуры: `mipsel`, `mips`, `mips64`, `aarch64`, `armv7`, `x86`, `x86_64`, `lexra` </sup></sub>
+
+       ```
+       mkdir -p /opt/etc/opkg
+       echo "src/gz nfqws-keenetic https://anonym-tsk.github.io/nfqws-keenetic/mips" > /opt/etc/opkg/nfqws-keenetic.conf
+       ```
+
+       
+
    </details>
 
 
-3. Установите пакет
+4. Установите пакет
    ```
    opkg update
    opkg install nfqws-keenetic
    ```
 
-4. Установите веб-интерфейс (опционально)
+5. Установите веб-интерфейс (опционально)
    ```
    opkg install nfqws-keenetic-web
    ```

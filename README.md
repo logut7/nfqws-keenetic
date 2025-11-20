@@ -91,11 +91,8 @@
    ~~opkg remove wget-nossl~~
 
 2. Установите opkg-репозиторий в систему
-   ```
-   mkdir -p /opt/etc/opkg
-   echo "src/gz nfqws-keenetic https://anonym-tsk.github.io/nfqws-keenetic/all" > /opt/etc/opkg/nfqws-keenetic.conf
-   ```
-   Репозиторий универсальный, поддерживаемые архитектуры: `mipsel`, `mips`, `mips64`, `aarch64`, `armv7`, `x86`, `x86_64`, `lexra`.
+ 
+   Выбрать нужный репозиторий
 
    <details>
      <summary>Или можете выбрать репозиторий под конкретную архитектуру</summary>
@@ -119,7 +116,7 @@
        echo "src/gz nfqws-keenetic https://anonym-tsk.github.io/nfqws-keenetic/mips" > /opt/etc/opkg/nfqws-keenetic.conf
        ```
 
-     - Универсальный <sub><sup> Репозиторий универсальный, поддерживаемые архитектуры: `mipsel`, `mips`, `mips64`, `aarch64`, `armv7`, `x86`, `x86_64`, `lexra` </sup></sub>
+     - Репозиторий универсальный <sub><sup>оддерживаемые архитектуры: `mipsel`, `mips`, `mips64`, `aarch64`, `armv7`, `x86`, `x86_64`, `lexra` </sup></sub>
 
        ```
        mkdir -p /opt/etc/opkg

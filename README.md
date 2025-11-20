@@ -83,14 +83,13 @@
 ---
 
 ### Установка на Keenetic/Netcraze и другие системы с Entware
-~~~opkg remove wget-nossl~~~
 
 1. Установите необходимые зависимости
    ```
    opkg update
    opkg install ca-certificates wget-ssl
-   ~~~opkg remove wget-nossl~~~
    ```
+   ~~opkg remove wget-nossl~~
 
 2. Установите opkg-репозиторий в систему
    ```
@@ -121,6 +120,7 @@
        ```
 
    </details>
+
 
 3. Установите пакет
    ```

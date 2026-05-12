@@ -23,16 +23,13 @@
  
   - Cudy TR1200
   - Cudy TR3000
-  - Keenetic Giga (KN-1010)
-  - Keenetic Giga (KN-1011)
-  - Keenetic Giga (KN-1012)
-  - Keenetic 4G (KN-1212)
-  - Keenetic Viva (KN-1913)
-  - Keenetic DSL (KN-2010)
-  - Keenetic Runner 4G (KN-2211)
-  - Keenetic Hero 4G+ (KN-2311)
-  - Keenetic Peak (KN-2710)
-  - Keenetic Hopper (KN-3811)
+  - Keenetic Giga
+  - Keenetic 4G
+  - Keenetic Viva
+  - Keenetic Runner 4G
+  - Keenetic Hero 4G+
+  - Keenetic Peak
+  - Keenetic Hopper
   - TP-Link Archer C20
   - TP-Link Archer C6U
   - TP-Link WDR3500
